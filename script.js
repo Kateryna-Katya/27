@@ -1,7 +1,3 @@
-/**
- * Project: <?= $domainTitle ?>
- * Version: 1.0.0 (Pure Vanilla JS)
- */
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Инициализация иконок Lucide
@@ -31,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 4. Hero: Эффект печатной машинки
     const initHeroTypewriter = () => {
-        const text = `const school = "<?= $domainTitle ?>";\n\nfunction startCareer() {\n  return "Success";\n}\n\n// Инициализация будущего...`;
+        const text = `const school = "It school";\n\nfunction startCareer() {\n  return "Success";\n}\n\n// Инициализация будущего...`;
         const container = document.getElementById('typewriter');
         if (!container) return;
         

@@ -56,108 +56,119 @@
     </header>
 
     <main>
-        <section class="hero" id="hero">
-            <div class="hero__bg">
-                <div class="hero__orb hero__orb--1"></div>
-                <div class="hero__orb hero__orb--2"></div>
-                <svg class="hero__svg-noise">
-                    <filter id='noiseFilter'>
-                        <feTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch'/>
-                    </filter>
-                    <rect width='100%' height='100%' filter='url(#noiseFilter)' opacity='0.05'/>
-                </svg>
+<section class="hero" id="hero">
+    <div class="hero__bg">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <svg class="hero__svg-noise">
+            <filter id='noiseFilter'>
+                <feTurbulence type='fractalNoise' baseFrequency='0.6' stitchTiles='stitch' />
+            </filter>
+            <rect width='100%' height='100%' filter='url(#noiseFilter)' opacity='0.05' />
+        </svg>
+    </div>
+
+    <div class="container hero__container">
+        <div class="hero__content">
+            <div class="hero__badge">⚡ Инженерный стек 2026</div>
+            <h1 class="hero__title">
+                <span class="reveal-text">Архитектура</span>
+                <span class="reveal-text reveal-text--accent">цифрового разума</span>
+            </h1>
+            <p class="hero__description">
+                Прогрессивная инфраструктура для освоения автономных систем. Проектируйте технологии, которые
+                масштабируют успех и открывают новые горизонты в мире прикладного интеллекта.
+            </p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary">Активировать доступ</a>
+                <a href="#method" class="btn btn--ghost">Технический стек <i data-lucide="arrow-right"></i></a>
             </div>
-    
-            <div class="container hero__container">
-                <div class="hero__content">
-                    <div class="hero__badge">⚡ Технология нового поколения</div>
-                    <h1 class="hero__title">
-                        <span class="reveal-text">Твой путь в IT</span>
-                        <span class="reveal-text reveal-text--accent">без границ</span>
-                    </h1>
-                    <p class="hero__description">
-                        Инновационная цифровая инфраструктура для обучения. Постройте карьеру, которая работает на вас, используя практики, применимые уже сегодня.
-                    </p>
-                    <div class="hero__btns">
-                        <a href="#contact" class="btn btn--primary">Начать сейчас</a>
-                        <a href="#method" class="btn btn--ghost">Узнать детали <i data-lucide="arrow-right"></i></a>
-                    </div>
+        </div>
+
+        <div class="hero__visual">
+            <div class="code-card">
+                <div class="code-card__header">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    <span style="font-size: 11px; opacity: 0.4; margin-left: 10px;">deploy_agent.py</span>
                 </div>
-                
-                <div class="hero__visual">
-                    <div class="code-card">
-                        <div class="code-card__header">
-                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                        </div>
-                        <div class="code-card__body">
-                            <code class="type-writer" id="typewriter"></code>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="courses" id="courses">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Направления, которые <span class="text-gradient">меняют правила игры</span></h2>
-                    <p class="section-subtitle">Выберите свой путь в современной цифровой экосистеме. Мы подготовили программы, ориентированные на практику и быстрый старт.</p>
-                </div>
-        
-                <div class="courses__grid">
-                    <div class="course-card">
-                        <div class="course-card__glow"></div>
-                        <div class="course-card__content">
-                            <div class="course-card__icon">
-                                <i data-lucide="layout"></i>
-                            </div>
-                            <h3 class="course-card__title">Frontend Architecture</h3>
-                            <p class="course-card__text">Создание масштабируемых интерфейсов. Инструменты, которые работают на вас.</p>
-                            <ul class="course-card__tags">
-                                <li>React</li>
-                                <li>TypeScript</li>
-                                <li>UI/UX</li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                    <div class="course-card">
-                        <div class="course-card__glow"></div>
-                        <div class="course-card__content">
-                            <div class="course-card__icon">
-                                <i data-lucide="brain-circuit"></i>
-                            </div>
-                            <h3 class="course-card__title">AI-инструменты</h3>
-                            <p class="course-card__text">Интеграция нейросетей в реальные задачи и разработку продуктов.</p>
-                            <ul class="course-card__tags">
-                                <li>LLM API</li>
-                                <li>Python</li>
-                                <li>Prompt Engineering</li>
-                            </ul>
-                        </div>
-                    </div>
-        
-                    <div class="course-card">
-                        <div class="course-card__glow"></div>
-                        <div class="course-card__content">
-                            <div class="course-card__icon">
-                                <i data-lucide="database"></i>
-                            </div>
-                            <h3 class="course-card__title">Backend & Cloud</h3>
-                            <p class="course-card__text">Передовая цифровая инфраструктура для высоконагруженных систем.</p>
-                            <ul class="course-card__tags">
-                                <li>Node.js</li>
-                                <li>Go</li>
-                                <li>AWS</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="courses__footer">
-                    <p>Программа пассивного дохода доступна для лучших выпускников. <a href="#contact" class="text-link">Узнать детали</a></p>
+                <div class="code-card__body">
+                    <code class="type-writer" id="typewriter">
+                        // Инициализация нейронного ядра...<br>
+                        // Оптимизация когнитивных циклов...<br>
+                        // Статус: Система развернута.
+                    </code>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+<section class="courses" id="courses">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Стек технологий <br><span class="text-gradient">лидеров рынка</span></h2>
+            <p class="section-subtitle">Прогрессивные программы, сфокусированные на проектировании систем с
+                использованием AI-интеллекта и облачной инфраструктуры.</p>
+        </div>
+
+        <div class="courses__grid">
+            <div class="course-card">
+                <div class="course-card__glow"></div>
+                <div class="course-card__content">
+                    <div class="course-card__icon">
+                        <i data-lucide="layout-template"></i>
+                    </div>
+                    <h3 class="course-card__title">Frontend Architecture</h3>
+                    <p class="course-card__text">Проектирование интуитивных интерфейсов для сложных экосистем. От
+                        компонентной базы до микрофронтендов.</p>
+                    <ul class="course-card__tags">
+                        <li>Next.js</li>
+                        <li>TypeScript</li>
+                        <li>Motion Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-card__glow"></div>
+                <div class="course-card__content">
+                    <div class="course-card__icon">
+                        <i data-lucide="brain-circuit"></i>
+                    </div>
+                    <h3 class="course-card__title">Agentic AI Workflows</h3>
+                    <p class="course-card__text">Создание автономных агентов и внедрение генеративных моделей в
+                        бизнес-цепочки.</p>
+                    <ul class="course-card__tags">
+                        <li>LangChain</li>
+                        <li>Vector DB</li>
+                        <li>Neuro-Integration</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-card__glow"></div>
+                <div class="course-card__content">
+                    <div class="course-card__icon">
+                        <i data-lucide="database-zap"></i>
+                    </div>
+                    <h3 class="course-card__title">Backend & Cloud Scale</h3>
+                    <p class="course-card__text">Разработка отказоустойчивых серверных ядер и оркестрация облачных сред
+                        для High-load систем.</p>
+                    <ul class="course-card__tags">
+                        <li>Go & Rust</li>
+                        <li>Kubernetes</li>
+                        <li>Serverless</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="courses__footer">
+            <p>Доступ к закрытому акселератору проектов для лучших резидентов. <a href="#contact"
+                    class="text-link">Запросить условия</a></p>
+        </div>
+    </div>
+</section>
         <section class="method" id="method">
             <div class="container">
                 <div class="section-header">
@@ -252,56 +263,64 @@
                 </div>
             </div>
         </section>
-        <section class="faq" id="faq">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Остались <span class="text-gradient">вопросы?</span></h2>
-                    <p class="section-subtitle">Мы собрали ответы на самые частые вопросы, чтобы ваш старт был максимально легким и быстрым.</p>
-                </div>
-        
-                <div class="faq__grid">
-                    <div class="faq__item">
-                        <button class="faq__trigger">
-                            <span>Нужен ли опыт в программировании для старта?</span>
-                            <i data-lucide="plus" class="faq__icon"></i>
-                        </button>
-                        <div class="faq__content">
-                            <p>Нет, наш пошаговый путь понятный каждому. Мы начинаем с основ и постепенно переходим к сложным AI-инструментам для реальных задач.</p>
-                        </div>
-                    </div>
-        
-                    <div class="faq__item">
-                        <button class="faq__trigger">
-                            <span>Как работает программа пассивного дохода?</span>
-                            <i data-lucide="plus" class="faq__icon"></i>
-                        </button>
-                        <div class="faq__content">
-                            <p>Это уникальная стратегия роста на базе инноваций: лучшие выпускники получают доступ к закрытым проектам платформы и долю от их реализации.</p>
-                        </div>
-                    </div>
-        
-                    <div class="faq__item">
-                        <button class="faq__trigger">
-                            <span>Доступна ли платформа в Европе?</span>
-                            <i data-lucide="plus" class="faq__icon"></i>
-                        </button>
-                        <div class="faq__content">
-                            <p>Да, платформа уже доступна в Европе. Наше предложение активно во всех странах ЕС и Великобритании.</p>
-                        </div>
-                    </div>
-        
-                    <div class="faq__item">
-                        <button class="faq__trigger">
-                            <span>Какая поддержка оказывается во время обучения?</span>
-                            <i data-lucide="plus" class="faq__icon"></i>
-                        </button>
-                        <div class="faq__content">
-                            <p>Вы получаете экспертную поддержку на всех этапах. Наши менторы помогают не только с кодом, но и с оценкой перспектив вашего проекта.</p>
-                        </div>
-                    </div>
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Технический <span class="text-gradient">брифинг</span></h2>
+            <p class="section-subtitle">Ответы на ключевые вопросы о стеке, интеграции и возможностях экосистемы.</p>
+        </div>
+
+        <div class="faq__grid">
+            <div class="faq__item">
+                <button class="faq__trigger">
+                    <span>Какой уровень технической подготовки необходим?</span>
+                    <i data-lucide="plus" class="faq__icon"></i>
+                </button>
+                <div class="faq__content">
+                    <p>Программа построена на базе адаптивной кривой обучения. Мы интегрировали Low-code инструменты,
+                        которые позволяют сфокусироваться на архитектуре и логике AI, минимизируя порог входа для
+                        специалистов из других сфер.</p>
                 </div>
             </div>
-        </section>
+
+            <div class="faq__item">
+                <button class="faq__trigger">
+                    <span>Что включает в себя программа инкубации проектов?</span>
+                    <i data-lucide="plus" class="faq__icon"></i>
+                </button>
+                <div class="faq__content">
+                    <p>Это акселератор для high-end решений: наиболее эффективные выпускники получают грантовую
+                        поддержку, доступ к вычислительным мощностям платформы и участие в коммерческих контрактах с
+                        нашими партнерами.</p>
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__trigger">
+                    <span>Соответствует ли платформа регуляциям ЕС?</span>
+                    <i data-lucide="plus" class="faq__icon"></i>
+                </button>
+                <div class="faq__content">
+                    <p>Абсолютно. Инфраструктура полностью локализована в Европе, соответствует стандартам GDPR и
+                        протоколам безопасности AI Act 2026 года, что гарантирует легитимность ваших разработок в
+                        странах ЕС и Великобритании.</p>
+                </div>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__trigger">
+                    <span>Как реализовано менторское сопровождение?</span>
+                    <i data-lucide="plus" class="faq__icon"></i>
+                </button>
+                <div class="faq__content">
+                    <p>За каждым резидентом закрепляется эксперт уровня Senior AI Engineer. Поддержка включает в себя
+                        код-ревью, аудит архитектуры нейросетей и помощь в масштабировании ваших продуктов на реальный
+                        рынок.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
         <section class="contact" id="contact">
             <div class="container contact__container">
                 <div class="contact__info">
